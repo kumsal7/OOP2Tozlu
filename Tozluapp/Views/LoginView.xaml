@@ -2,7 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:helpers="crl-namespace:DemoApp.Helpers"
+             xmlns:vm="clr-namespace:Tozluapp.ViewModels"
              x:Class="Tozluapp.Views.LoginView">
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel />
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <Grid Padding="20" VerticalOptions="Center">
             <Grid.RowDefinitions>
@@ -17,10 +21,14 @@
                 <Entry Placeholder="E-posta" Text="{Binding Username}"/>
                 <Entry Placeholder="Şifre" Text="{Binding Password}" IsPassword="True"/>
                 <Button Text="Gİriş Yap" HorizontalOptions="Center" BackgroundColor="Black"
-                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"/>
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"
+                        Command="Binding LoginCommand"
+                        />
                 <Label Text="Yeni Kullanıcı" />
                 <Button Text="Misafir" HorizontalOptions="Center" BackgroundColor="DarkOrange"
-                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"/>
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"
+                        Command="Binding RegisterCommnad"
+                        />
             </StackLayout>
         </Grid>
      </ContentPage.Content>
