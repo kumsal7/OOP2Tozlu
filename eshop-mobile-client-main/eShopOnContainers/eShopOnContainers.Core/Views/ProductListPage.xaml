@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eShopOnContainers.Core.View.ProductListPage"
+             >
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Ürünler"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   FontSize="30"
+                   Grid.ColumnSpan="2"/>
+                <StackLayout BackgroundColor="White"
+                         Padding="10.15"
+                         Grid.Row="1" Grid.Column="0">
+                    <Image Source="https://img.tozlu.com/Uploads/UrunResimleri/kirmizi-on-cepli-kapusonlu-sardonlu-fe-3-8cf3.jpg" HeightRequest="100"/>
+                    <Label Text="Kırmızı Kadın Kapüşonlu Fermuarlı Basic Sweatshirt" FontSize="18" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="29.99 TL" TextColor="Red" FontAttributes="Bold" FontSize="22" />
+                    </StackLayout>
+                    <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+                </StackLayout>
+                <StackLayout BackgroundColor="White"
+                         Padding="10.15"
+                         Grid.Row="1" Grid.Column="1">
+                    <Image Source="https://img.tozlu.com/Uploads/UrunResimleri/buyuk/pudra-on-cepli-kapusonlu-sardonlu-ferm-697b-4.jpg" HeightRequest="100"/>
+                    <Label Text="Pudra Kadın Kapüşonlu Fermuarlı Basic Sweatshirt" FontSize="18" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="39.99 TL" TextColor="Red" FontAttributes="Bold" FontSize="22" />
+                    </StackLayout>
+                    <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+                </StackLayout>
+                <StackLayout BackgroundColor="White"
+                         Padding="10.15"
+                         Grid.Row="2" Grid.Column="0">
+                    <Image Source="https://img.tozlu.com/Uploads/UrunResimleri/siyah-kapusonlu-ici-polarli-kapitone-e-41f1-b.jpg" HeightRequest="100"/>
+                    <Label Text="Siyah Kapüşonlu İçi Polarlı Kapitone Erkek Çocuk Mont" FontSize="18" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="129.99 TL" TextColor="Red" FontAttributes="Bold" FontSize="22" />
+                    </StackLayout>
+                    <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+                </StackLayout>
+                <StackLayout BackgroundColor="White"
+                         Padding="10.15"
+                         Grid.Row="2" Grid.Column="1">
+                    <Image Source="https://img.tozlu.com/Uploads/UrunResimleri/buyuk/mavi-tasli-lazer-yirtikli-kiz-cocuk-je-aa-8ef.jpg" HeightRequest="100"/>
+                    <Label Text="Mavi Kız Çocuk Taşlı Lazer Yırtıklı Jean Şort" FontSize="18" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="29.99 TL" TextColor="Red" FontAttributes="Bold" FontSize="22" />
+                    </StackLayout>
+                    <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+                    <StackLayout BackgroundColor="White"
+                         Padding="10.15"
+                         Grid.Row="3" Grid.Column="0">
+                        <Image Source="https://img.tozlu.com/Uploads/UrunResimleri/buyuk/lacivert-erkek-kapusonlu-fermuarli-bas-3a95f6.jpg" HeightRequest="100"/>
+                        <Label Text="Lacivert Erkek Kapüşonlu Fermuarlı Basic Sweatshirt" FontSize="18" FontAttributes="Bold"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="39.99 TL" TextColor="Red" FontAttributes="Bold" FontSize="22" />
+                        </StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="White"
+                         Padding="10.15"
+                         Grid.Row="3" Grid.Column="1">
+                        <Image Source="https://img.tozlu.com/Uploads/UrunResimleri/haki-erkek-likrali-bisiklet-yaka-basic-1-9c63.jpg" HeightRequest="100"/>
+                        <Label Text="Haki Erkek Likralı Bisiklet Yaka Basic T-shirt " FontSize="18" FontAttributes="Bold"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="29.99 TL" TextColor="Red" FontAttributes="Bold" FontSize="22" />
+                        </StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="White"
+                         Padding="10.15"
+                         Grid.Row="4" Grid.Column="0">
+                        <Image Source="https://img.tozlu.com/Uploads/UrunResimleri/buyuk/siyah-bagcikli-erkek-spor-ayakkabi-468-52a8-d.jpg" HeightRequest="100"/>
+                        <Label Text="Siyah Erkek Rahat Taban Bağcıklı Spor Ayakkabı" FontSize="18" FontAttributes="Bold"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="159.99 TL" TextColor="Red" FontAttributes="Bold" FontSize="22" />
+                        </StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="White"
+                         Padding="10.15"
+                         Grid.Row="4" Grid.Column="1">
+                        <Image Source="https://img.tozlu.com/Uploads/UrunResimleri/buyuk/beyaz-kadin-yuksek-taban-gunluk-spor-a-7-2b0e.jpg" HeightRequest="100"/>
+                        <Label Text="Beyaz Kadın Yüksek Taban Günlük Spor Ayakkabı" FontSize="18" FontAttributes="Bold"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="129.99 TL" TextColor="Red" FontAttributes="Bold" FontSize="22" />
+                        </StackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#f1f1f1"/>
+                    </StackLayout>
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

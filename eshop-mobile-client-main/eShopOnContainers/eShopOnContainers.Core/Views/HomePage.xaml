@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eShopOnContainers.Core.Views.HomePage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Transparent" VerticalOptions="StartAndExpand">
+            <StackLayout BackgroundColor="Transparent" VerticalOptions="Start" Orientation="Horizontal" HorizontalOptions="Fill">
+                <Frame Padding="0"  BackgroundColor="Transparent" WidthRequest="80" HeightRequest="70" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Image Source="https://files.sikayetvar.com/lg/cmp/22/22373.png?1522650125" BackgroundColor="Transparent" />
+                </Frame>
+                <Frame Padding="0"  BackgroundColor="Transparent" WidthRequest="50" HeightRequest="50" VerticalOptions="End" HorizontalOptions="End">
+                    <Image Source="https://icons-for-free.com/download-icon-notification-131964743693202280_512.png" BackgroundColor="Transparent" />
+                </Frame>
+            </StackLayout>
+            <StackLayout BackgroundColor="Transparent" VerticalOptions="Start">
+                <Frame Padding="0" Margin="5" CornerRadius="15"  HasShadow="False">
+                    <SearchBar  Placeholder="Ara..." VerticalOptions="Center" BackgroundColor="LightGray">
+                    </SearchBar>
+                </Frame>
+            </StackLayout>
+            <ScrollView VerticalScrollBarVisibility="Never">
+                <StackLayout BackgroundColor="Transparent" VerticalOptions="StartAndExpand">
+                    <StackLayout BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="400" HeightRequest="170" Margin="15,0">
+                        <Frame Padding="0" CornerRadius="10">
+                            <Grid>
+                                <CarouselView x:Name="HomePageCarousel" VerticalOptions="Fill" HorizontalOptions="Fill">
+                                    <CarouselView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Image Source="{Binding Source}" VerticalOptions="Fill" HorizontalOptions="Fill" Aspect="Fill"/>
+                                        </DataTemplate>
+                                    </CarouselView.ItemTemplate>
+                                </CarouselView>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                        <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Margin="15,5,15,0" Padding="0" CornerRadius="10">
+                            <Image Source="https://img.tozlu.com/Uploads/SayfaTasarim/Sayfa10/Yeni-Koleksiyon-Ozel-Fiyatlar-c5d0.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                        <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Margin="15,5,15,0" Padding="0" CornerRadius="10">
+                            <Image Source="https://img.tozlu.com/Uploads/SayfaTasarim/Sayfa10/Kadin-T-Shirt-Modelleri-3bfa.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                        <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Margin="15,5,15,0" Padding="0" CornerRadius="10">
+                            <Image Source="https://img.tozlu.com/Uploads/SayfaTasarim/Sayfa10/Kadin-Spor-Ayakkabi-3bae.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="Transparent" HeightRequest="220" VerticalOptions="Start">
+                        <Frame HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Margin="15,5,15,0" Padding="0" CornerRadius="10">
+                            <Image Source="https://img.tozlu.com/Uploads/SayfaTasarim/Sayfa10/Erkek-Spor-Ayakkabi-289e.jpg" BackgroundColor="Black" Aspect="Fill"/>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
